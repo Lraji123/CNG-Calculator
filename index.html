@@ -6,7 +6,37 @@
     <title>CNG Calculator| Rajeswary</title>
     <link rel="stylesheet" href="/assets/CSS/main.css">
   </head>
-  <body>
-   <h1 bg-600> CNG Calculator</h1> 
+  <body class="bg-gradient-to-r from-purple-500 to-red-500 min-h-screen">
+   <div class="sm:bg-white lg:bg-green-200 p-10 max-w-lg mx-auto mt-10 rounded-md shadow-2xl">
+    <div>
+    <h1 class="font-extrabold"> CNG Cost Calculator</h1>
+    <p class="text-gray-600">Simple Tool to calculate the Compressed natural gas(CNG) cost.</p>
+    <form class="mt-5 space-y-4">
+      <div><label class=" font-semibold text-smmt-2 pr-2" for="trip-distance"> Trip Distance<span class="text-red-500">*</span>
+      </label>
+        <input id="trip-distance" type="number" placeholder="Trip Distance" class="form-input" required>
+      </div>
+      
+        <br>
+      <div>
+      <label class="font-semibold text-sm mt-2 pr-3" for="Fuel Efficiency" > Fuel Efficiency<span class="text-red-500">*</span>
+      </label>
+        <input id="Fuel Efficiency" type="number" placeholder="Fuel Efficiency" class="form-input" required>
+      </div>
+      <br>
+      
+    <div>
+      <label class="font-semibold text-sm mt-2 pr-2" for="FuelCost"> CNG Fuel Cost <span class="text-red-500">*</span>
+    </label>
+      <input id="FuelCost" type="number" placeholder="Fuel Cost" class="form-input" value="84" required>
+    </div>
+    <div>
+      <button class="bg-blue-400 px-4 py-2 rounded text-white w-full" >Calculate</button>
+    </div>
+
+    </div>
+  </div>
+  </div> 
+ </form>
   </body>
 </html>
